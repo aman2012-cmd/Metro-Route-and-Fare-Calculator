@@ -100,15 +100,26 @@ To set up and run this project locally, follow these steps:
 
 ## Project Structure 🏗️
 
+The project follows a standard Java project structure. Here's an overview:
+
 MetroRouteApp/
 ├── src/
 │   └── MetroApp/
 │       ├── Graph_M.java        # Defines the metro graph and pathfinding logic. 🌐
 │       ├── MapView.java        # Handles drawing the metro map GUI. 🎨
-│       ├── MetroApp.java       # Main application class, GUI, and logic. 🏠
+│       ├── MetroApp.java       # Main application class, GUI, and core logic. 🏠
 │       └── SMSSender.java      # Handles sending SMS via Fast2SMS API. ✉️
 └── lib/
 └── mysql-connector-j-9.4.0.jar # MySQL JDBC Connector (downloaded separately) 📦
+
+
+* **`src/`**: Contains all the Java source code for the application.
+* **`src/MetroApp/`**: This package holds all the core Java classes for the Metro App.
+    * `Graph_M.java`: Manages the metro station graph, including adding edges, getting neighbors, calculating distances, and finding all possible paths (used for route calculation).
+    * `MapView.java`: A JPanel extension responsible for rendering the visual metro map, including lines and stations.
+    * `MetroApp.java`: The main entry point of the application. It sets up the Swing GUI, handles user interactions, integrates with `Graph_M`, `MapView`, and `SMSSender`, and manages database operations for ticket booking.
+    * `SMSSender.java`: A utility class dedicated to sending SMS messages using the Fast2SMS API.
+* **`lib/`**: This directory is where external JAR libraries, like the MySQL JDBC Connector, should be placed. These libraries are necessary for the application to compile and run correctly.
 
 
 ## Contributing 🤝
