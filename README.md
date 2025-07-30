@@ -33,6 +33,7 @@ The Metro Route and Fare Calculator is a Java Swing-based desktop application de
 The project follows a modular Java structure. You should be running commands from the `MetroRouteApp` directory.
 # Project Directory: MetroRouteApp
 
+```python
 MetroRouteApp/
 │
 ├── .vscode/                     # VS Code specific settings (optional)
@@ -51,7 +52,7 @@ MetroRouteApp/
     ├── Graph_M.java             # Manages metro graph logic (stations, routes, distances)
     ├── MapView.java             # Renders the metro map GUI
     └── MetroApp.java            # Main application, GUI setup, and business logic
-
+```
 
 * **`bin/`**: This directory is where the compiled `.class` files will be placed after successful compilation.
 * **`lib/`**: This directory holds all the external JAR libraries required by the project.
