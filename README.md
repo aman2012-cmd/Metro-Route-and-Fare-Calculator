@@ -66,7 +66,7 @@ To set up and run this project locally, follow these steps:
 3.  **Update Database Credentials:** In `src/MetroApp/MetroApp.java`, ensure the database connection details are correct for your MySQL setup:
     ```java
     // Line around 330:
-    try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/metro", "root", "Aman1511@")) {
+    try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/metro", "root", "SQL-password")) {
         // Change "localhost:3306" if your MySQL is on a different host/port.
         // Change "root" to your MySQL username.
         // Change "Aman1511@" to your MySQL password.
