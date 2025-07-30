@@ -66,7 +66,7 @@ To set up and run this project locally, follow these steps:
 3.  **Update Database Credentials:** In `src/MetroApp/MetroApp.java`, ensure the database connection details are correct for your MySQL setup:
     ```java
     // Line around 330:
-    try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/metro", "root", "SQL-password")) {
+    try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/metro", "root", "Your-SQL-password")) {
         // Change "localhost:3306" if your MySQL is on a different host/port.
         // Change "root" to your MySQL username.
         // Change "Aman1511@" to your MySQL password.
@@ -99,3 +99,22 @@ To set up and run this project locally, follow these steps:
         ```
 
 ## Project Structure 🏗️
+
+MetroRouteApp/
+├── src/
+│   └── MetroApp/
+│       ├── Graph_M.java        # Defines the metro graph and pathfinding logic. 🌐
+│       ├── MapView.java        # Handles drawing the metro map GUI. 🎨
+│       ├── MetroApp.java       # Main application class, GUI, and logic. 🏠
+│       └── SMSSender.java      # Handles sending SMS via Fast2SMS API. ✉️
+└── lib/
+└── mysql-connector-j-9.4.0.jar # MySQL JDBC Connector (downloaded separately) 📦
+
+
+## Contributing 🤝
+
+Feel free to fork this repository, contribute, and suggest improvements! Pull requests are welcome. 🚀
+
+## License 📄
+
+This project is open-source and available under the [MIT License](LICENSE)
